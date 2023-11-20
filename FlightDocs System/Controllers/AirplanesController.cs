@@ -49,7 +49,7 @@ namespace FlightDocs_System.Controllers
             var air = await _context.GetAirplaneById(id);
             if (air == null)
             {
-                return NotFound("Khong tim thay air");
+                return NotFound("Khong tim thay may bay");
             }
             await _context.UpdateAirplane(airplane);
             return Ok(" cap nhat thanh cong");
